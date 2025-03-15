@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center" id="home">
+        <div class="container">
+            <h1 class="hero-title">Hello, I am Jason Espallardo</h1>
+            <p class="hero-subtitle">Computer Science Student | Aspiring Frontend Developer</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="text-center section-title">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p class="lead">I am a Computer Science student at the Polytechnic University of the Philippines. I really enjoy building web applications and solving challenging problems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-title">TOP 3 Projects</h2>
+            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExample" data-slide-to="1"></li>
+                    <li data-target="#carouselExample" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/rock-paper-scissors.jpg" class="d-block w-100" alt="Rock Paper Scissors">
+                        <div class="carousel-caption">
+                            <h3>Rock, Paper, and Scissors</h3>
+                            <p>A classic game where rock crushes scissors, scissors cut paper, and paper covers rock.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/etch-a-sketch.png" class="d-block w-100" alt="Etch-a-Sketch">
+                        <div class="carousel-caption">
+                            <h3>Etch-a-Sketch</h3>
+                            <p>A browser-based sketchpad where users can draw by hovering over squares.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/simple-calculator.png" class="d-block w-100" alt="Simple Calculator">
+                        <div class="carousel-caption">
+                            <h3>Simple Calculator</h3>
+                            <p>A basic calculator that performs arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="text-center section-title">My Skills</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card skill-card">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <i class="fab fa-html5 mr-2"></i> HTML
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card skill-card">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <i class="fab fa-css3-alt mr-2"></i> CSS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card skill-card">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <i class="fab fa-js-square mr-2"></i> JavaScript
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card skill-card">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <i class="fas fa-code-branch mr-2"></i> Problem-solving
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card skill-card">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <i class="fas fa-sync-alt mr-2"></i> Adaptable
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card skill-card">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <i class="fas fa-laptop-code mr-2"></i> Coding
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Education & Work Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Institution/Company</th>
+                                <th>Degree/Position</th>
+                                <th>Years</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Polytechnic University of the Philippines</td>
+                                <td>Computer Science Student</td>
+                                <td>2022 - Current</td>
+                            </tr>
+                            <tr>
+                                <td>Pamantasan ng Lungsod ng Valenzuela</td>
+                                <td>Senior High School STEM Student</td>
+                                <td>2020 - 2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="text-center section-title">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="./assets/rock-paper-scissors.jpg" class="card-img-top" alt="Rock Paper Scissors">
+                        <div class="card-body">
+                            <h5 class="card-title">Rock, Paper, Scissors</h5>
+                            <p class="card-text">The Rock Paper Scissors game is a beginner-friendly coding project where users compete against a computer in the classic hand-sign battle. The rule of this game is simple: rock crushes scissors, scissors cut paper, and paper covers rock.</p>
+                            <div class="text-center mt-4">
+                                <a href="https://github.com/Shifard/rock-paper-scissors" target="_blank" class="btn btn-primary"><i class="fab fa-github mr-2"></i>View on GitHub</a>
+                                <a href="https://shifard.github.io/rock-paper-scissors/" target="_blank" class="btn btn-primary" style="margin-top: 10px;">Live Code Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="./assets/etch-a-sketch.png" class="card-img-top" alt="Etch-a-Sketch">
+                        <div class="card-body">
+                            <h5 class="card-title">Etch-a-Sketch</h5>
+                            <p class="card-text">The Etch A Sketch project is an interactive sketchpad that mimics the functionality of the classic toy. Users can draw by hovering over a grid of squares, which dynamically updates based on user interaction.</p>
+                            <div class="text-center mt-4">
+                                <a href="https://github.com/Shifard/etch-a-sketch" target="_blank" class="btn btn-primary"><i class="fab fa-github mr-2"></i>View on GitHub</a>
+                                <a href="https://shifard.github.io/etch-a-sketch/" target="_blank" class="btn btn-primary" style="margin-top: 10px;">Live Code Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="./assets/simple-calculator.png" class="card-img-top" alt="Simple Calculator">
+                        <div class="card-body">
+                            <h5 class="card-title">Simple Calculator</h5>
+                            <p class="card-text">The simple calculator project is a basic tool that performs fundamental arithmetic operations like addition, subtraction, multiplication, and division. This project is perfect for honing your understanding of logic and user interface design in web development!</p>
+                            <div class="text-center mt-4">
+                                <a href="https://github.com/Shifard/Simple_Calculator" target="_blank" class="btn btn-primary"><i class="fab fa-github mr-2"></i>View on GitHub</a>
+                                <a href="https://shifard.github.io/Simple_Calculator/" target="_blank" class="btn btn-primary" style="margin-top: 10px;">Live Code Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-4 mb-md-0">
+                                <i class="fas fa-phone"></i>
+                                <p class="word-wrap mx-auto" style="max-width: 180px; word-break: break-word;">09472509876</p>
+                            </div>
+                            <div class="col-md-4 text-center mb-4 mb-md-0">
+                                <i class="fas fa-envelope"></i>
+                                <p class="word-wrap mx-auto" style="max-width: 180px; word-break: break-word;">espallardo.je@gmail.com</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="https://www.linkedin.com/in/jason-espallardo-870913285/"><i class="fab fa-linkedin"></i></a>
+                                <p class="word-wrap mx-auto" style="max-width: 180px; word-break: break-word;">https://www.linkedin.com/in/jason-espallardo-870913285/</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
